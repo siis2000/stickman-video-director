@@ -2,154 +2,258 @@
 
 <div align="center">
 
-[English](README.md) · [**简体中文**](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Português do Brasil](README.pt-BR.md)
+[**简体中文**](README.zh-CN.md) · [English](README.en.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Português do Brasil](README.pt-BR.md)
 
-# Stickman Video Director
+# AI 火柴人动画画风大全
 
-### 把任何想法，变成一支真正“动起来”的一分钟火柴人视频。
+**将任何想法变成一部高质量的、稳定画风火柴人视频。**
 
-一个 Codex Skill，就能把你的文案变成经过确认的英文旁白、以画面为先的导演提案，以及六条可直接生产的 Gemini Omni Flash 提示词。
-
-![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827?style=flat-square)
-![Gemini Omni Flash](https://img.shields.io/badge/Gemini-Omni%20Flash-6d28d9?style=flat-square)
-![一分钟视频](https://img.shields.io/badge/Video-≈60%20seconds-0066ff?style=flat-square)
+[![GitHub Stars](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=flat-square)](https://github.com/kaomei/stickman-video-director/stargazers)
 ![MIT License](https://img.shields.io/badge/License-MIT-16a34a?style=flat-square)
 
-适合制作发布在 **YouTube Shorts、TikTok、Instagram Reels 和 YouTube** 上的知识解释、励志故事、教育短片与快节奏视觉内容。
+</div>
+
+<div align="center">
+
+我把全网所有热门的火柴人画风，逐个实测并整理开源出来。安装好 Skill 后，你只需要给一个话题，就能拿到动画脚本、动态分镜，以及配音和音效提示词。
+
+<strong>以后想做火柴人动画，来这里挑画风就够了——</strong>适用于 **YouTube 知识讲解、TikTok、职场励志、教育科普和快节奏情感故事。**
+
+</div>
+
+<table width="100%">
+<tr>
+<td width="50%" align="center">
+<strong>黑白极简</strong><br>
+<a href="#style-gallery"><img src="assets/readme/previews/dark-theme-demo.gif" alt="黑白极简火柴人动画：黑底白线、动态科普" width="90%"></a>
+</td>
+<td width="50%" align="center">
+<strong>潮酷科技</strong><br>
+<a href="#style-gallery"><img src="assets/readme/previews/style-2a-demo.gif" alt="潮酷科技火柴人动画：红帽角色、科技光效" width="90%"></a>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+<strong>史前黑色幽默</strong><br>
+<a href="#style-gallery"><img src="assets/readme/previews/style-3-demo.gif" alt="史前黑色幽默火柴人动画：洞穴故事、反转短片" width="90%"></a>
+</td>
+<td width="50%" align="center">
+<strong>治愈故事</strong><br>
+<a href="#style-gallery"><img src="assets/readme/previews/style-4-cozy-cafe.gif" alt="治愈故事火柴人动画：彩色场景、生活共鸣" width="90%"></a>
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+**4 大画风 · 6 种视觉方案 · 实测样片 · 免费开源**
+
+⭐ **先收藏，下次做火柴人动画不用再到处找提示词。**
+
+[开始使用](#quick-start) · [最近更新](#recent-updates) · [完整制作教程](https://x.com/CrazyKaomei/status/2102311241046008268)
 
 </div>
 
 <!-- readme:demos -->
 
-## 两种高对比风格，一套统一的视觉语言
+<a id="style-gallery"></a>
 
-| 白底黑火柴人 | 黑底白火柴人 |
+## 全部画风一览
+
+### 风格 1：基础黑白风
+
+用最少的线条，把一个概念讲清楚。纯白或纯黑的画布上，人物、道具和强调色承担主要信息，适合做节奏明快的知识解说。
+
+- **画面特点**：简洁圆头、线条肢体与统一线宽，可偶尔加入简单表情；最多三种高饱和强调色，用来区分情绪、风险或行动。抽象内容可以变成具体画面，比如把焦虑画成牢笼，把注意力画成进度条。
+- **适合内容**：科学常识、心理成长、励志、自我管理、商业拆解与概念解释。
+- **怎么选**：白底黑火柴人清爽直观，适合教学和日常科普；黑底白火柴人对比更强，适合悬念、冲突和情绪表达。
+
+| 风格 1A：白底黑火柴人 | 风格 1B：黑底白火柴人 |
 |:---:|:---:|
-| <!-- demo:light:start --><a href="assets/readme/light-theme-demo.mp4"><img src="assets/readme/light-theme-demo.gif" alt="白底黑火柴人和高饱和强调色的动态效果演示" width="600"></a><!-- demo:light:end --> | <!-- demo:dark:start --><a href="assets/readme/dark-theme-demo.mp4"><img src="assets/readme/dark-theme-demo.gif" alt="黑底白火柴人和高饱和强调色的动态效果演示" width="600"></a><!-- demo:dark:end --> |
-| 白色画布 · 黑色人物 | 黑色画布 · 白色人物 |
+| <!-- demo:light:start --><img src="assets/readme/previews/light-theme-demo.gif" alt="风格 1A：白底黑火柴人动态演示" width="360"><!-- demo:light:end --> | <!-- demo:dark:start --><img src="assets/readme/previews/dark-theme-demo.gif" alt="风格 1B：黑底白火柴人动态演示" width="360"><!-- demo:dark:end --> |
+| 纯白画布 · 黑色人物 | 纯黑画布 · 白色人物 |
 
-> 点击任一动态预览，即可打开带声音的完整 10 秒视频。如果这种视觉风格也让你有了创作灵感，欢迎给仓库点一个 Star，让更多创作者发现它。
+---
 
-## 有文案，不等于已经有了视频
+### 风格 2：现代潮酷风
 
-一个好想法仍然可能生成一段平淡的动画：一个人物、一个背景，十秒钟里几乎没有新的视觉变化。真正导演完整的一分钟，需要设计开场钩子、控制解释节奏、创造贴合内容的视觉隐喻、推动镜头、连接场景，并在多次独立生成之间锁住一致性。
+红色冷帽、黄色 T 恤，是这套画风最鲜明的角色标记。既可以在干净的科技空间里讲产品，也可以走进卧室、街道和荒野，演一段有起伏的故事。
 
-**Stickman Video Director 会在你消耗生成额度之前，先完成这些制作层面的思考。**
+- **画面特点**：固定红帽黄衣的极简角色，搭配两种环境。2A 用纯白空间、极淡网格、悬浮玻璃界面和青蓝光效表现科技感；2B 用彩色场景、光影和空间纵深营造故事氛围。
+- **适合内容**：2A 适合 AI 工具、科技产品、方法教学与功能解说；2B 适合成长经历、生活话题、冒险与励志故事。
+- **怎么选**：重点是“讲清一个工具或方法”，选 2A；重点是“跟着角色经历一件事”，选 2B。
+
+| 风格 2A：极简科技 | 风格 2B：彩色故事 |
+|:---:|:---:|
+| <img src="assets/readme/previews/style-2a-demo.gif" alt="风格 2A：极简科技风动态演示" width="360"> | <img src="assets/readme/previews/style-2b-demo.gif" alt="风格 2B：彩色故事风动态演示" width="360"> |
+| 纯白空间 · 极淡网格 · 青蓝微光 | 彩色场景 · 电影光影 · 叙事氛围 |
+
+---
+
+### 风格 3：史前手绘 / 黑色幽默
+
+把今天的烦恼，搬回没有手机和办公室的史前世界。洞穴、兽皮、篝火和夸张表情，让职场、人性与生活里的荒诞，变成一段带反转的小故事。
+
+- **画面特点**：粗手绘线条、白色实心头部、深色肢体、兽皮服饰和土色环境，强调角色互动、表情反应与喜剧停顿。角色按故事设计，男女老幼都可以出现，不同故事不必共用一张脸。
+- **适合内容**：史前脑洞、职场讽刺、人性观察、黑色幽默、寓言与儿童英语故事。
+- **怎么选**：想用一个小情节讲出“原来如此”或“怎么会这样”的反转，可以选这一风格；尤其适合把现代关系放进原始部落，做出熟悉又意外的笑点。
+
+| 案例 1：《人类的第一份工作是怎么来的？》 | 案例 2：《人类第一次发现火源》 |
+|:---:|:---:|
+| <img src="assets/readme/previews/style-3-demo.gif" alt="《人类的第一份工作是怎么来的？》动态预览" width="360"> | <img src="assets/readme/previews/style-3-community-fire.gif" alt="《人类第一次发现火源》——粉丝作品" width="360"> |
+| 史前故事 · 职场反转 | 火源主题 · 粉丝作品 |
+
+**粉丝案例：《人类第一次发现火源》** — 由粉丝 [X：@monixin888](https://x.com/monixin888/status/2109651037850325112) 使用 WorkBuddy 调用本 Skill 制作。
+
+---
+
+### 风格 4：治愈故事风
+
+一只舍不得用的杯子，一条忍不住秒回的消息，一个终于留给自己的下午。让极简角色走进彩色的日常场景，用动作、表情和镜头讲普通人能共鸣的小事。
+
+- **画面特点**：白色实心圆头与细长躯干、深色细肢体和自然的小表情，搭配完整的 2D 卡通环境。全景交代地点，近景捕捉犹豫或释然，跟拍带着角色继续向前。
+- **适合内容**：生活共鸣、心理成长、人际关系、温暖故事、习惯养成与儿童英语。
+- **怎么选**：想让观众从一个具体生活片段里认出自己，可以选这一风格。色彩和光影随主题变化，既能表达温暖，也能讲焦虑、疲惫和重新出发。
+
+| 案例 1：通勤路上的消息焦虑 | 案例 2：把时间留给自己 |
+|:---:|:---:|
+| <img src="assets/readme/previews/style-4-cozy-station.gif" alt="治愈故事风：地铁站里的消息焦虑" width="360"> | <img src="assets/readme/previews/style-4-cozy-cafe.gif" alt="治愈故事风：露天咖啡座的休息时刻" width="360"> |
+| 地铁站 · 行走跟拍 · 情绪近景 | 露天咖啡座 · 暖光树影 · 日常动作 |
 
 <!-- readme:advantages -->
 
-## 为什么短视频创作者会需要这个 Skill
+## 它帮你做什么
 
-| 优势 | 你会得到什么 |
+把选题、脚本和画面一起考虑，不只是给火柴人套一个外观。
+
+| 环节 | Skill 输出 |
 |---|---|
-| **更强的故事结构** | 在保留核心含义的前提下，把原始材料重组成强开场、递进解释和结尾回扣。 |
-| **真正的确认节点** | 先展示清晰可读的六幕导演提案，再生成最终模型提示词；在修改成本最低的时候调整故事。 |
-| **丰富且相关的动态画面** | 每段规划三个时间节拍，并加入视觉隐喻、环境变化、镜头运动、文字节点、人物互动、转场、BGM 与音效。 |
-| **完整的生产锁定** | 在每条独立提示词中重复人物、线条粗细、配色、声音、台词、音频、转场和负面约束。 |
-| **真正适配画幅的导演方式** | 针对 `9:16`、`16:9` 或 `1:1` 重新设计构图、镜头路径和文字位置，而不是只替换一个比例标签。 |
-| **可控的视觉反差** | 支持白底黑人、黑底白人，以及最多三种高饱和强调色。 |
-| **忠于原始材料** | 不随意编造缺乏依据的事实、数据、引语或产品卖点。 |
-
-无需 API，也不依赖 MCP。安装 Skill、调用它，然后在对话中完成整个制作流程即可。
-
-<!-- readme:platforms -->
-
-## 同一个想法，为不同屏幕重新构图
-
-| 比例 | 适合场景 | 导演重点 |
-|---|---|---|
-| `9:16` | YouTube Shorts、TikTok、Instagram Reels | 纵向纵深、醒目的中央轮廓、层叠式揭示、适合手机阅读的文字 |
-| `16:9` | YouTube 知识视频、教育内容、视觉随笔 | 横向调度、侧向镜头运动、分屏对比、充足的负空间 |
-| `1:1` | 社交平台信息流、紧凑的产品故事 | 强中心构图、放射式运动、清晰的边缘留白 |
-
-<!-- readme:workflow -->
-
-## 粘贴 → 选择 → 确认 → 生成 → 拼接
-
-1. **粘贴**文案、笔记、文章，或者只给出一个主题。
-2. **选择** `16:9`、`9:16` 或 `1:1`，再选择浅色或深色主题。
-3. **确认**包含英文 VO、参考翻译、画面、镜头、转场、BGM 和音效的详细导演提案。
-4. **生成**当前提案获批后的六条独立 Gemini Omni Flash 提示词。
-5. **拼接**六段约十秒的视频，组成一支连贯的一分钟成片。
-
-画幅、主题、旁白、场景结构、配色、声音或基调都可以修改。发生全局变化时，Skill 会回到提案阶段并重新请求确认。
+| **文案** | 开场、递进、结尾，英文旁白与中文参考。 |
+| **画面** | 动作、道具、运镜、转场与音效。 |
+| **衔接** | 人物、道具与声线设定，跨段转场。 |
+| **画幅** | 按横竖屏调整构图和镜头。 |
+| **调整** | 先确认提案，再输出提示词。 |
 
 <!-- readme:output -->
 
-## 最终会得到什么
+先拿到**导演提案**：英文旁白、中文参考、场景、运镜和声音设计。确认后再拿到逐段独立的 **Gemini Omni Flash 视频提示词**，以及转场、拼接与字幕建议。
 
-- 面向创作者的英文标题、核心观点、开场钩子、基调、配色、声音与音乐方向
-- 约 **130–150 个英文单词**的一分钟旁白
-- 六个彼此不同的画面场景，每两到三秒出现一次明显变化
-- 精确英文台词与参考翻译
-- 六条带时间节拍和负面约束的独立 Gemini Omni Flash 提示词
-- 前后匹配的结尾与开场，让片段之间更容易衔接
-- BGM、音效、一致性和最终拼接建议
-
-<details>
-<summary><strong>示例请求</strong></summary>
-
-```text
-Use $directing-stickman-videos to turn this copy into a one-minute English stickman video:
-
-Gravity bends space and time so strongly around a black hole that even light cannot escape.
-```
-
-Skill 会先询问缺失的画幅和主题，然后展示六幕导演提案供你确认，确认前不会生成最终模型提示词。
-
-</details>
+Skill 负责提案和提示词，Flow 等工具负责生成视频，最后用剪映等软件完成字幕与剪辑。无需为 Skill 配置 API 或 MCP。
 
 <!-- readme:install -->
 
-## 安装
+<a id="quick-start"></a>
 
-克隆仓库：
+## 开始使用
 
-```bash
-git clone https://github.com/kaomei/stickman-video-director.git
-cd stickman-video-director
-```
+### 1. 安装 Skill
 
-把可安装的 Skill 文件夹复制到 Codex skills 目录：
-
-```bash
-cp -R skills/directing-stickman-videos "${CODEX_HOME:-$HOME/.codex}/skills/"
-```
-
-重启 Codex，让 Skill 出现在可用列表中。然后调用它并粘贴你的素材：
+把下面这句话发给你使用的 AI：
 
 ```text
-$directing-stickman-videos
+帮我安装这个 Skill：
+https://github.com/kaomei/stickman-video-director
 ```
+
+<!-- readme:workflow -->
+
+### 2. 给一个话题
+
+安装后，把话题、文案或文章直接发给 AI，例如：
+
+```text
+帮我做一个《人类的第一份工作是怎么来的？》的火柴人视频。
+```
+
+### 3. 跟着引导，确认提案
+
+**选设置 → 看导演提案 → 按需修改 → 确认后拿提示词。**
+
+画幅、画风没选，Skill 会主动询问；时长可指定，默认 60 秒。你只要跟着引导，选横屏 `16:9` 或竖屏 `9:16`，再从上面的画风中选一种即可；已经提供的设置不会重复询问。想先试一小段，也可以直接说“先做 30 秒”。
+
+选好设置后，它会先给你导演提案，列出故事结构、分段旁白、画面动作、镜头和声音设计。你可以先看整体方案，修改不满意的部分，确认后再拿到用于生成视频的分段提示词。
+
+**《人类的第一份工作是怎么来的？》｜横屏 16:9 · 风格 3 史前黑色幽默 · 30 秒**
+
+下面是这支样片制作前确认的分镜提案：
+
+| 时间 | 画面与动作 | 配音文案 |
+|---|---|---|
+| **0–10s：拒绝生存压力** | 原始人拖着石棒回到洞穴，瘫倒在草床上。洞口出现剑齿虎的巨大影子。他睁开一只眼，一脸“又来？”；起身滚动巨石堵住洞口，拍掉手上的灰，回床睡觉。最后定格在他满意的脸上。 | **“Ten thousand years ago, one man finally solved all his problems. He shut them outside.”** |
+| **10–20s：老板找到你了** | 接上一段：他刚闭眼，洞口传来三声敲击。巨石被推开一条缝，族长探头进来，笑着递给他一根长矛。他摆手拒绝。族长随即拿出一条烤肉腿；他的鼻子抽动，眼睛瞬间睁大。切到洞外：他已经握着长矛，被族长推向猛兽脚印。 | **“Then someone offered him food… in exchange for a small favor. Congratulations. Employment was invented.”** |
+| **20–30s：文明的代价** | 他满身灰尘回到同一个洞穴，把长矛扔下，伸手等烤肉。族长面带职业微笑，只递给他一小块肉；然后把一大捆长矛塞进他怀里，拍拍他的肩膀离开。他看着小肉块，再看长矛，缓缓转头直视镜头。最后躺回草床，却被怀里的长矛硌得坐起来。 | **“The reward got smaller. The workload got bigger. And somehow… they called that progress.”** |
+
+提案不满意，直接说要改哪里；你确认后，它才输出最终分段提示词。这个 30 秒示例对应 3 条约 10 秒的提示词，包含人物、动作、镜头、旁白和声音要求。
+
+### 4. 生成视频，剪辑成片
+
+将提示词按顺序提交到 [Google Flow](https://flow.google.com/)，再把生成片段导入剪映，调整衔接并添加字幕。30 秒通常对应 3 条约 10 秒的提示词，60 秒对应 6 条。
+
+第一次做，跟着这篇[完整制作教程：选题、脚本、Flow 生成与剪映成片](https://x.com/CrazyKaomei/status/2102311241046008268)跑一遍。Flow 操作见[使用教程](https://x.com/CrazyKaomei/status/2093893997223923822?s=20)。Skill 免费开源，视频生成费用和可选模型以平台当前界面为准。
 
 <!-- readme:reliability -->
 
-## 为反复修改而设计，也诚实面对生成差异
+## 使用小贴士
 
-- **确认必须明确。** 当前提案没有得到批准前，不会进入 Phase B。
-- **全局变化会触发重新构图。** 新画幅或新主题会重新设计导演提案，而不是机械替换文字。
-- **提示词可以独立使用。** 每条都会重复独立生成所需的关键锁定条件。
-- **内容始终有依据。** Skill 可以强化结构与表达，但不会添加没有来源的主张。
-- **音频仍可能存在差异。** 独立生成的视频可能出现轻微的声音或音乐差别。追求最高一致性时，可以保留每段同步音效，并在拼接时使用一条连续的外部旁白和 BGM。
+<!-- readme:platforms -->
 
-## 仓库结构
+**选横屏还是竖屏？**
 
-```text
-skills/directing-stickman-videos/  可安装的 Skill
-assets/readme/                     README 演示素材
-tests/                             行为场景与验证脚本
-docs/superpowers/specs/            已确认的产品设计
-docs/superpowers/plans/            实施计划
-```
+| 比例 | 适合平台 | 构图重点 |
+|---|---|---|
+| `9:16` | YouTube Shorts、TikTok、Instagram Reels、抖音、小红书 | 纵向动作、中央主体、手机画面安全区 |
+| `16:9` | YouTube、B 站、横屏教育视频 | 横向调度、场景展开、左右对比 |
+
+适合不露脸的知识解说、历史商业科普、心理成长、生活故事和产品讲解；英文旁白配后期双语字幕，也能做儿童英语、生活短剧或知识精读。支持 30 秒、60 秒、90 秒、3 分钟等 10 秒整数倍时长。
+
+- 人物、道具和旁白设定按整支视频统一；需要换声音时，先在提案里确定。
+- 发现某段人物、道具或声音明显偏离时，针对该段调整和复测，不用重做所有片段。
+- 文案可以改得更有吸引力，但不凭空添加事实、数据或产品效果。
+
+<a id="recent-updates"></a>
+
+## 最近更新
+
+- **2026-10-15**：优化中文首页、安装入口和案例说明，加入轻量动图预览与 Star 增长曲线；Skill 规则不变。
+- **2026-10-14**：新增风格 4「治愈故事风」，加入地铁站与咖啡座两个样片。
+- **2026-10-13**：优化风格 1 的人物描述与当前姿态约束。
+- **2026-10-12**：完善全风格共用的语音一致性规则，补充史前风格案例。
+
+已有用户：最近的首页调整不需要重装。想用风格 4，或安装的是人物／声音规则更新前的版本，再更新 Skill 即可。[查看更新记录](CHANGELOG.zh-CN.md)。
 
 <!-- readme:contribute -->
 
-## 一起把它做得更好
+## 下一种火柴人，你来点
 
-欢迎提交使用案例、提示词改进、真实生成记录与具体建议。你可以创建 issue，或者通过 pull request 提交一个范围明确、能够复现的改动。
+下面这些画风正在计划中，尚未上线：
 
-如果这个 Skill 帮你把一个迟迟没有完成的想法，变成了一支真正可以发布的视频，**请给仓库点一个 Star**。它会帮助下一个正在寻找同样工作流的创作者发现这个项目。
+- **虚实融合场景** — 继续探索 2D 火柴人与更丰富环境的搭配。
+- **风格 5：讲台解说** — 黑板互动与知识讲解。
+- **风格 6：手绘绘本** — 童话、寓言与儿童故事。
+- **风格 7：涂鸦打斗** — 动作短片与连招对决。
+- **风格 8：双人情景喜剧** — 对话、互怼与日常反转。
+- **风格 9：卡牌闯关** — 升级、打怪与游戏叙事。
+
+想看新画风、分享作品或反馈问题，都欢迎到 [Issues](https://github.com/kaomei/stickman-video-director/issues) 留言。画风建议请附参考和想做的主题；投稿请附作品、所用风格与作者链接，方便展示和署名。
+
+## Star 增长曲线
+
+⭐ **如果这份画风库帮你省下了找提示词、反复试错的时间，欢迎点个 Star，留着下次做动画时用。**
+
+我是[烤妹儿](https://x.com/CrazyKaomei)，会继续实测新画风，把好用的提示词、制作方法和踩过的坑免费整理在这里。希望你少花时间折腾工具，多留一点时间给真正想讲的故事。
+
+<div align="center">
+<a href="https://www.star-history.com/?repos=kaomei%2Fstickman-video-director&amp;type=date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kaomei/stickman-video-director&amp;type=Date&amp;theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kaomei/stickman-video-director&amp;type=Date">
+    <img src="https://api.star-history.com/svg?repos=kaomei/stickman-video-director&amp;type=Date" alt="kaomei/stickman-video-director 的 GitHub Star 增长曲线" width="800">
+  </picture>
+</a>
+</div>
 
 ## 许可证
 
-MIT
+本项目采用 [MIT License](LICENSE) 开源，允许免费使用、修改、商用和分发。分发本项目或其重要部分时，请保留原有版权和许可声明。
+
+项目按“现状”提供，不作任何担保；完整条款见 [LICENSE](LICENSE)。
