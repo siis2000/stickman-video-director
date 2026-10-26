@@ -1,9 +1,32 @@
 ---
 name: directing-stickman-videos
-description: "Use when turning copy, notes, articles, or topics into customizable-length English stick-figure videos (in 10-second multiples: 30s, 60s, 3min, 5min, default 60s), kinetic line-animation explainers, motivational shorts, or Gemini Omni Flash prompt packages."
+description: "Turn topics, requirements, articles or scripts into stickman videos. Director mode creates approved storyboards and standalone video prompts; Autopilot mode produces narrated, captioned illustration-and-micro-animation videos through configured generation tools and a local renderer. Also guide installation handoff, first use and setup of this specific Skill."
 ---
 
 # Directing Stickman Videos
+
+## Two modes, one Skill
+
+Keep the existing installation and name. Route by the requested deliverable:
+
+- **A · Director**: proposals, storyboards and standalone video-generation prompts. A1/A1.1/A1.2 map to Style 1 light/dark; A2/A2.1/A2.2 to Style 2/2A/2B; A3–A5 to Styles 3–5. Follow the unchanged Director contract below.
+- **B · Autopilot**: a finished local video with narration, captions, meaningful illustrations, local motion and SFX. Read [Autopilot](references/autopilot.md), then its selected B-style reference. B1 is [极简手绘风](references/b1-minimal-handdrawn.md). B styles have their own assets and numbering; do not silently reuse an A-style prompt or sample.
+
+If the mode is ambiguous, ask one short question. Honor previously supplied choices. Do not run Director's ten-second clip rules, no-visible-text rule or Phase B prompt workflow for Autopilot. Autopilot can start with a topic, promotion brief, post, article or story script; it is not story-only. English is the default narration language, but the user's language and voice choices take precedence.
+
+Voice instructions are mode-specific: B uses the selected named TTS voice as provided, with no added voice/style description. Director's detailed frozen voice profiles below and in `references/voice-continuity.md` apply only to A, not to any B style.
+
+A and B share an installation, not a production contract or style library. All sections from **A · Director** to the end of this file apply only to A1–A5, including phrases such as "all styles". For B, use only Autopilot's production rules and the selected B-style reference; do not inherit A's setup, approvals, pacing, prompts, voice or visual constraints. Each B style owns its visuals, captions, voice, pacing and SFX; never inherit B1 by default. Preserve A's validated rules when revising B, and vice versa.
+
+## First use and next steps
+
+Use one shared guide in the user's requested or current conversation language, falling back to an available host/local language setting when unclear. Keep guidance language separate from video narration/subtitles; do not select it from the README edition.
+
+Read [first-use and stage guidance](references/getting-started.md) at installation handoff or first use; apply it in both modes. After verifying an installation you perform, show a plain-language quick-start immediately; otherwise on first invocation. Explain outputs, uses, tools, workflow, copyable requests and relevant public GitHub style/sample catalogs with selection by code. Reuse known choices. At substantive stage completions or blockers, distinguish assistant work from user choices; state completed outputs, missing items and the concrete next action. Do not add mandatory approval gates or repeat the welcome every turn.
+
+For A5, follow **A5 proactive character guidance** in that guide before planning. Other A references follow **Optional A character references**; keep voice rules unchanged.
+
+## A · Director
 
 ## Core contract
 
@@ -23,7 +46,7 @@ Require these before planning:
     - `Style 2B (Cinematic Story)`: full-color narrative environments, cinematic lighting & depth
   - `Style 3 (Prehistoric Hand-Drawn / Dark Comedy)`: expressive white filled heads, black stick limbs, animal-hide costumes and earthy prehistoric settings; story-specific casting
   - `Style 4 (Cozy Storytelling / 治愈故事风)`: expressive minimalist white-filled characters with dark stick limbs in full-color 2D cartoon environments; varied story locations and cinematic shot changes
-  - `Style 5 (Historical Cartoon / 历史卡通风)`: white-filled round heads, simple black oval eyes and thin black stick limbs in era-specific costume, with cel shading and full-color painterly historical settings
+  - `Style 5 (Historical Cartoon / 历史卡通风)`: white heads with connected short white necks, expressive faces, black stick limbs and compact fingerless palms, period dress and cel-shaded historical settings
 
 If aspect ratio or visual style is missing, ask for all missing items in one concise message and stop. If duration is omitted, default to 60 seconds (6 clips). If a user provides a duration not divisible by 10, round to the nearest 10-second multiple. If a user specifies only light or dark theme, default to Style 1. Never select an aspect ratio or style silently. Do not re-ask choices already supplied.
 
