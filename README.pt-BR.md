@@ -2,16 +2,18 @@
 
 [🇺🇸 EN](README.en.md) · [🇨🇳 简中](README.zh-CN.md) · [🇯🇵 日本語](README.ja.md) · [🇰🇷 한국어](README.ko.md) · [🇫🇷 FR](README.fr.md) · [**🇧🇷 PT-BR**](README.pt-BR.md) · [🇹🇷 TR](README.tr.md) · [🇮🇩 ID](README.id.md)
 
-# Gerador de vídeos de bonecos de palito com IA para o YouTube
+# 🎬 Stickman Video Director
 
-**Transforme qualquer ideia em um vídeo de bonecos de palito de alta qualidade, com um estilo visual consistente.**
+**Transforme qualquer roteiro em vídeos animados de bonecos de palito virais, em vários estilos, para canais do YouTube sem aparecer na câmera. Totalmente de código aberto.**
 
 [![GitHub Stars](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=flat-square)](https://github.com/kaomei/stickman-video-director/stargazers)
 ![MIT License](https://img.shields.io/badge/License-MIT-16a34a?style=flat-square)
 
-Basta fornecer um tema, um artigo ou um link para gerar automaticamente imagens, narração, legendas, efeitos sonoros e microanimações — e receber um vídeo completo de bonecos de palito. **Crie um canal no YouTube com identidade própria, sem aparecer na câmera.**
+Comece com um tema, um artigo ou um roteiro. Organize automaticamente os visuais, as narrações, as legendas e os efeitos sonoros em um vídeo de bonecos-palito pronto para publicar.
 
-Reúne estilos de animação com bonecos de palito populares na internet, com atualizações contínuas e código aberto — para **divulgação científica, psicologia e motivação, educação e conscientização, acolhimento emocional, histórias em alta e muitos outros nichos.**
+**⚡ 100% gratuito e de código aberto. Sem câmera, sem assinaturas de US$ 50/mês e pronto em minutos, não em dias.**
+
+Estilos visuais sempre atualizados para canais de **divulgação científica, psicologia sombria, fábulas tecnológicas, histórias virais e narrativas.**
 
 </div>
 
@@ -46,42 +48,56 @@ Reúne estilos de animação com bonecos de palito populares na internet, com at
 <a href="#b1"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@fa0a68d1ccf9fd057230abab2af832f768debe86/assets/readme/previews/b1-minimal-handdrawn.gif" alt="Vídeo em desenho à mão minimalista com bonecos expressivos, texto em destaque e microanimações" width="90%"></a>
 </td>
 </tr>
+<tr>
+<td width="50%" align="center">
+<strong>Amber Noir</strong><br>
+<a href="#a6"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@828b865b37cbff61464b9c00e04bce79f79b3b5c/assets/readme/previews/style-6-amber-noir-flow.gif" alt="Animação stickman Amber Noir: personagem de moletom laranja em uma cidade com luz quente e sombras profundas" width="90%"></a>
+</td>
+<td width="50%" align="center">
+<a href="#a7"><strong>Em breve…</strong></a>
+</td>
+</tr>
 </table>
 
 <div align="center">
 
-**6 estilos · 8 opções visuais · Exemplos testados · Grátis e de código aberto**
+**7 estilos · 9 opções visuais · Exemplos testados · Grátis e de código aberto**
 
-⭐ **O projeto continua crescendo. Deixe um Star para acompanhar os próximos estilos.**
+⭐ **Dê uma estrela ao projeto para acompanhar os próximos estilos e novos recursos.**
 
-[Começar](#quick-start) · [Estilos A](#a-styles) · [Estilos B](#b-styles) · [Perguntas frequentes](#faq)
+[Começar](#quick-start) · [Estilos Director](#a-styles) · [Estilos Autopilot](#b-styles) · [Perguntas frequentes](#faq) · [Roteiro de evolução](#road-to-10000-stars--creator-ecosystem)
 
 </div>
 
 <a id="creation-modes"></a>
 
-## Dois modos de criar vídeos
+## 🎬 Dois modos de criar vídeos
 
-**Quer controlar cada cena? Escolha A · Director. Quer um vídeo longo sem montar trecho por trecho? Escolha B · Autopilot.** Um projeto, duas formas de produzir.
+**Quer controlar cada plano? Escolha A · Director Mode. Quer um vídeo pronto sem montar as cenas por conta própria? Escolha B · Autopilot Mode.** Um projeto, dois fluxos de trabalho.
 
 |  | <div align="center">A · Director</div> | <div align="center">B · Autopilot</div> |
 |:---:|:---|:---|
 | **Proposta** | **Você controla a produção, a IA cuida da direção:** recebe storyboard e prompts e decide como gerar e editar os clipes. | **Passe um tema ou pedido e receba o vídeo pronto:** ilustrações, narração, legendas, microanimações e montagem automática. |
 | **Duração** | **Pensado primeiro para vídeos curtos**, como 30 segundos a 3 minutos; também permite produzir vídeos maiores por trechos. | **Pensado primeiro para vídeos longos**, especialmente narrados de **10 minutos ou mais**; também faz vídeos curtos e histórias em episódios. |
-| **Ferramentas** | Um assistente de IA com suporte a Skills prepara a proposta; **Google Flow** ou outra plataforma gera os clipes; **CapCut** ou outro editor faz a montagem. | Roda em agentes como **Codex e Claude Code**, capazes de ler e gravar arquivos, usar ferramentas e executar comandos para conectar a geração de materiais à montagem local. |
+| **Ferramentas** | Planeje com um assistente de IA compatível com Skills, gere os clipes no seu gerador de vídeo preferido (Google Flow, Runway, Luma, Kling etc.) e depois monte tudo no CapCut ou Premiere. | Roda em agentes como **Codex e Claude Code**, capazes de ler e gravar arquivos, usar ferramentas e executar comandos para conectar a geração de materiais à montagem local. |
 | **Visual** | **Animação gerada por trecho:** foco em ações, direção de câmera e interação entre personagens. | **Cenas ilustradas + microanimações:** cortes, aproximações e movimentos de câmera acompanham a narração, sem precisar gerar uma animação completa para cada trecho. |
 | **Entrega** | Proposta de direção, storyboard, prompts de vídeo por trecho e design de som. | **Arquivo de vídeo completo, com narração, legendas e microanimações.** |
 | **Começar** | <div align="center"><a href="#director-start">Usar o modo Director</a></div> | <div align="center"><a href="#autopilot-start">Usar o modo Autopilot</a></div> |
 
-Os dois modos aceitam **um tema, um texto ou um roteiro completo**. **As séries A e B têm numeração, estilos e exemplos próprios; novos estilos entram em sua respectiva série.** Você escolhe formato, idioma da narração e voz. As durações acima são sugestões, não limites.
+Os dois fluxos podem começar com um tema inicial, um link da web ou um roteiro completo. Escolha livremente a proporção de tela (9:16, 16:9, 1:1), o idioma da narração e a voz. As durações acima são recomendações, não limites rígidos.
 
-O Autopilot precisa de serviços de imagem e voz disponíveis, além de um ambiente local de montagem de vídeo. Uma janela de chat comum não substitui essa estrutura. A Skill é gratuita e de código aberto; os serviços conectados podem cobrar pelo uso.
+💡 **Configuração rápida**:
+
+- **Director Mode** funciona em janelas comuns de conversa com IA.
+- **Autopilot Mode** roda em agentes de programação com IA que têm acesso a arquivos e ao terminal (como **Claude Code, OpenAI Codex ou Cursor**) para cuidar automaticamente da renderização à entrega dos arquivos.
 
 <a id="quick-start"></a>
 
-## Como começar
+## 🧭 Como começar
 
-Envie a mensagem abaixo a um assistente de IA com suporte a Skills. Depois de instalar, ele apresentará **o que cada modo entrega e como começar**, com exemplos prontos para adaptar.
+Compatível com Claude Code, Codex, Cursor, Antigravity ou qualquer ambiente de agente com acesso a arquivos e ao terminal.
+
+Envie o seguinte ao seu assistente de IA:
 
 ```text
 Instale esta Skill para mim:
@@ -116,7 +132,7 @@ Depois da minha aprovação, entregue os prompts de vídeo por trecho.
 
 A proposta inclui estrutura da história, narração por trecho, ações, câmera e som. Depois de receber os prompts, copie-os um a um para o [Google Flow](https://flow.google.com/) ou outra ferramenta de vídeo. Use o CapCut ou outro editor para adicionar legendas e finalizar a montagem.
 
-Na primeira produção, siga o [tutorial completo em chinês](https://x.com/CrazyKaomei/status/2102311241046008268).
+Para seu primeiro vídeo, siga o [guia visual de produção no X](https://x.com/CrazyKaomei/status/2102311241046008268) (thread com demonstrações em vídeo passo a passo).
 
 <a id="autopilot-start"></a>
 
@@ -145,11 +161,13 @@ O assistente de IA planeja as cenas, gera imagens e narração, prepara legendas
 
 Na primeira vez, ele confere a configuração e explica o que falta e como resolver, passo a passo. Se uma imagem ou voz não ficar boa, é possível ajustar só o trecho afetado e preservar o que você já aprovou.
 
+**Finalização opcional nos dois modos:** depois de aprovar o vídeo final, continue com o [kit de thumbnail e publicação](#thumbnail-publishing-kit) para criar uma capa no mesmo estilo e os textos de publicação, ou encerre aqui. Não é preciso trocar de modo nem reinstalar.
+
 <a id="style-gallery"></a>
 
 <a id="a-styles"></a>
 
-## Estilos A · Director
+## 🎨 Estilos A · Director
 
 Os estilos seguem a numeração A1, A2, A3… Cada um tem seus próprios exemplos de animação.
 
@@ -241,9 +259,34 @@ Contribuição de estilo e prompts: [Lawal Ridwan / @leksautomate](https://githu
 
 ---
 
+<a id="a6"></a>
+
+### A6: Amber Noir
+
+Luz dourada e quente, sombras profundas e um personagem de cabeça redonda preta com moletom laranja. Transforme um “e se…” intrigante em uma pequena história cinematográfica, contada por ações expressivas em vez de um apresentador falando para a câmera.
+
+- **Estilo visual**: reflexos em âmbar sobre sombras em tons de ameixa, silhuetas simples, cenários urbanos com sombreamento suave e movimentos de câmera contidos.
+- **Ideal para**: cenários “e se…”, psicologia, fábulas modernas, descobertas inesperadas e histórias curtas com reviravolta.
+- **Escolha quando**: quiser cenas animadas cinematográficas com narração independente. Em um agente com acesso ao navegador, os clipes aprovados podem ser montados com voz, efeitos sonoros, legendas marcantes em caixa alta e um título branco e limpo.
+
+| Exemplo 1: E se tudo custasse 10 mil vezes menos? | Exemplo 2: Uma oferta que vale uma corrida |
+|:---:|:---:|
+| <a href="assets/readme/style-6-amber-noir-mcp.mp4"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@828b865b37cbff61464b9c00e04bce79f79b3b5c/assets/readme/previews/style-6-amber-noir-mcp.gif" alt="Amber Noir: uma história de 20 segundos em que os preços caem da noite para o dia" width="360"></a> | <a href="assets/readme/style-6-amber-noir-flow.mp4"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@828b865b37cbff61464b9c00e04bce79f79b3b5c/assets/readme/previews/style-6-amber-noir-flow.gif" alt="Amber Noir: cena animada de 8 segundos com um personagem de moletom laranja em frente a uma loja" width="360"></a> |
+| Exemplo Renoise MCP · 20 segundos | Exemplo Google Flow · 8 segundos |
+
+---
+
+<a id="a7"></a>
+
+### A7: Em breve…
+
+Novos estilos especializados para o modo Director estão em treinamento. [Dê uma estrela ao projeto](#road-to-10000-stars--creator-ecosystem) para desbloqueá-los ao chegar a 5,000 Stars!
+
+---
+
 <a id="b-styles"></a>
 
-## Estilos B · Autopilot
+## 🤖 Estilos B · Autopilot
 
 Os estilos seguem a numeração B1, B2, B3… Cada um tem seus próprios vídeos com cenas ilustradas e microanimações, mantidos separadamente da série A.
 
@@ -280,71 +323,137 @@ Clique no GIF para assistir ou baixar a amostra com áudio.
 
 ### B2: Em breve…
 
-A descrição do estilo, as amostras e os exemplos de uso serão publicados aqui.
+Novos estilos Autopilot e animações procedurais estão em treinamento. [Dê uma estrela ao projeto](#road-to-10000-stars--creator-ecosystem) para desbloqueá-los ao chegar a 5,000 Stars!
+
+<!-- thumbnail-publishing-kit:start -->
+<a id="thumbnail-publishing-kit"></a>
+
+## 🖼️ Kit de thumbnails de alto CTR e publicação
+
+**Até um ótimo vídeo precisa conquistar o clique primeiro.** Depois de concluir a animação, prepare no mesmo fluxo thumbnails com o visual certo, títulos de alto CTR e ganchos para engajar o público.
+
+Um pacote de finalização integrado para **Director Mode e Autopilot Mode**: gera ganchos visuais alinhados ao personagem e ao estilo aprovados do vídeo, com metadados do YouTube prontos para publicar.
+
+<table width="100%">
+  <tr>
+    <td align="center"><a href="assets/readme/thumbnails/no-camera.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/no-camera.jpg" alt="NO CAMERA? — boneco expressivo desenhado à mão e câmera riscada" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/first-job.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/first-job.jpg" alt="THE FIRST JOB — personagem pré-histórico diante de um enorme obstáculo de pedra" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/a5-samurai-taxes.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a5-samurai-taxes.jpg" alt="SAMURAI VS TAXES — samurai em cel shading, rua de Edo e letras serifadas inspiradas em xilogravura" width="280"></a></td>
+  </tr>
+  <tr>
+    <td align="center">Uma pergunta simples e um símbolo claro.</td>
+    <td align="center">Uma história que começa com um obstáculo enorme.</td>
+    <td align="center">Traje de época, cenário e tipografia de destaque.</td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td align="center"><a href="assets/readme/thumbnails/a1-you-vs-you.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a1-you-vs-you.jpg" alt="YOU vs YOU — pequeno boneco preto enfrentando uma versão gigante de si mesmo, com um discreto detalhe vermelho" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/a2-busy-vs-better.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a2-busy-vs-better.jpg" alt="BUSY ≠ BETTER — personagem de gorro vermelho sobrecarregado por cartões de tarefas em contraste com uma única tarefa clara" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/a4-3am-again.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a4-3am-again.jpg" alt="3AM. AGAIN. — rolagem no celular de madrugada, luz azul da tela e letras suaves feitas à mão" width="280"></a></td>
+  </tr>
+  <tr>
+    <td align="center">Um conflito contado por uma diferença extrema de escala.</td>
+    <td align="center">Ocupado ou eficaz: dá para entender de relance.</td>
+    <td align="center">Uma cena familiar, luz pintada e letras à mão.</td>
+  </tr>
+</table>
+
+*Todos os conceitos de thumbnail seguem princípios comprovados de apresentação no YouTube: contradições visuais marcantes, silhuetas limpas e tipografia legível no celular.*
+
+### O que o kit entrega:
+
+- **Imagem de thumbnail**: Uma capa horizontal 16:9 alinhada ao personagem, estilo, paleta e conflito aprovados. Gerada diretamente quando há uma ferramenta de imagem adequada e os custos necessários são autorizados.
+- **5 opções de título de alto CTR**: Pensadas para intenção de busca, lacunas de curiosidade e apelo a um público amplo.
+- **Descrição para YouTube Studio e SEO**: Resumo do tema, tags relevantes e marcações de tempo baseadas no corte final ou em uma linha do tempo verificada.
+- **Gancho para comentário fixado**: Uma pergunta pertinente que convida a uma conversa genuína.
+- **Checklist pré-publicação**: Áreas seguras no celular, contraste, precisão do conteúdo e situação dos direitos dos materiais. Sem garantia de liberação no Content-ID ou de elegibilidade para monetização.
+
+### Como acionar:
+
+Após você aprovar o vídeo final, o assistente oferecerá este pacote opcional. Aceite para continuar ou pule sem atrasar a entrega do vídeo. Não é preciso copiar um prompt. Você também pode pedir diretamente:
+
+```text
+Gere o kit de thumbnail e publicação para este vídeo:
+- 1 imagem de thumbnail horizontal 16:9 que combine com o estilo aprovado
+- 5 opções de títulos para YouTube
+- Uma descrição, tags relevantes e marcações de tempo verificadas, quando disponíveis
+- 1 pergunta de engajamento para o comentário fixado
+- Um checklist pré-publicação com as verificações pendentes identificadas
+```
+
+*Gerar a imagem exige uma ferramenta disponível e a autorização dos custos necessários. Se não estiver disponível, o assistente explica a limitação e entrega o pacote de texto. Pedidos antecipados com base no roteiro aprovado geram rascunhos; as verificações do corte final ficam pendentes. Baixe a capa e copie o texto para o YouTube Studio ou TikTok conforme necessário. Nada é enviado ou publicado automaticamente.*
+
+<!-- thumbnail-publishing-kit:end -->
 
 <!-- readme:reliability -->
 
 <a id="faq"></a>
 
-## Perguntas frequentes
+## ❓ Perguntas frequentes
 
-### Q1. Dá para criar um vídeo sem ter roteiro?
+### Q1. É mesmo 100% gratuito? Existem taxas ocultas?
 
-Sim. Passe um tema, artigo, link ou pedido específico, e o assistente de IA organiza o material em um roteiro. Se você já tiver um, pode usá-lo diretamente. Vale informar também o público, a plataforma e a duração desejada.
+Sim. O Stickman Video Director é 100% gratuito e de código aberto sob a licença MIT. Você pode usá-lo livremente em projetos pessoais e comerciais. Ao contrário de plataformas SaaS proprietárias que cobram US$ 30–60/mês, este projeto não tem assinatura. Você só paga pelo uso das suas APIs de terceiros (como Google Gemini, Claude ou ElevenLabs), conforme os modelos que escolher conectar.
 
-### Q2. Dá para automatizar os estilos do Director? Por que manter esse modo?
+### Q2. Posso monetizar esses vídeos no YouTube e no TikTok?
 
-Por enquanto, os estilos da série A têm fluxos de produção próprios. Mas você pode pedir ao assistente de IA para combinar seu estilo favorito da série A com o fluxo de produção da série B e montar uma solução DIY, do seu jeito.
+Sim, com certeza. Uma grande preocupação de quem cria canais sem aparecer é a política de desmonetização do YouTube para “Reused Content” ou conteúdo de IA de baixo esforço. Como o Stickman Video Director escreve arcos narrativos personalizados, ritmo exclusivo e encenação visual original, seu resultado é totalmente original. Centenas de canais monetizam com sucesso vídeos narrativos de bonecos-palito pelo YouTube Partner Program (YPP).
 
-Manter o Director é, principalmente, uma forma de controlar o custo da geração de vídeo e das tentativas. Para um vídeo de dez e poucos minutos, uma rodada completa de geração pode custar **algumas dezenas de dólares americanos**, e refazer o trabalho aumenta a conta. Por isso, o Director mantém a geração e a revisão cena a cena, com edição manual: você controla cada plano e pode conferir o resultado antes de decidir se continua.
+### Q3. Preciso saber programar ou ter uma GPU cara?
 
-### Q3. Como manter o personagem consistente no modo Director?
+Não. Você não precisa de uma placa RTX de ponta nem de conhecimentos de programação.
 
-Você pode pedir: “Crie primeiro um boneco de palito que combine com o estilo escolhido. Quero aprovar as três vistas — frente, lado e costas — antes dos prompts das cenas.” É uma boa opção para ter um personagem próprio. Se já houver uma referência aprovada, reutilize-a; se não precisar personalizar, pode pular essa etapa.
+- **Director Mode** funciona por conversa em qualquer assistente de IA compatível com Skills.
+- **Autopilot Mode** roda em agentes de programação com IA (como Claude Code, Codex ou Cursor) usando pedidos simples em inglês. Toda a geração visual pesada é feita por APIs leves na nuvem ou renderização procedural, não pelo seu hardware local.
 
-Em ferramentas de vídeo que aceitam imagens de referência, **anexe o personagem aprovado ao gerar cada clipe**. A referência é um apoio extra: não substitui os prompts das cenas nem altera as regras do estilo escolhido. Confira a consistência entre os clipes antes de finalizar.
+### Q4. Posso fazer um vídeo sem ter um roteiro pronto?
 
-### Q4. Só funciona no Codex?
-
-Não. O modo Director funciona em assistentes de IA que permitem instalar e usar Skills.
-
-O Autopilot precisa de um ambiente como Codex ou Claude Code, capaz de ler e gravar arquivos e executar comandos, com os serviços de imagem e voz e as dependências locais configurados.
+Sim. Você pode colar uma ideia inicial, um pensamento espontâneo, um link de notícia ou um post de blog inteiro. O diretor de IA extrai o conflito central, escreve um gancho atraente de 3 segundos e organiza o tema em um arco narrativo enxuto de 6 cenas, com timing cômico e indicações de narração.
 
 <!-- readme:platforms -->
 
-### Q5. Como transformar um artigo ou referência em um vídeo mais interessante?
+### Q5. Quando devo escolher Director Mode ou Autopilot Mode?
 
-Diga a quem quer chegar, qual é a ideia principal e o que deseja que o público faça ao terminar. O assistente de IA usa isso para encontrar um ângulo, criar um gancho de abertura, organizar a narrativa e planejar a chamada final antes do storyboard.
+- **Escolha Director Mode** quando quiser controle absoluto sobre cada plano, ângulo de câmera e metáfora visual. Ele protege seu orçamento: você aprova o roteiro e os storyboards gratuitamente antes de gerar um único quadro de vídeo.
+- **Escolha Autopilot Mode** quando quiser uma experiência automática em um clique que gere roteiro, narração, legendas e o arquivo de vídeo final.
 
-Tem um vídeo de referência? Mostre-o e explique se gosta do ritmo, da linguagem ou da estrutura. Aproveite as técnicas sem copiar a opinião e a expressão de outra pessoa. Fatos históricos, comerciais e científicos ainda precisam ser verificados antes da publicação.
+### Q6. Como a IA mantém a retenção do público sem deixar o vídeo chato?
 
-### Q6. É pago?
+Ferramentas tradicionais de IA apenas ilustram o texto literalmente. O Stickman Video Director aplica de verdade a **psicologia da narrativa visual**:
 
-A Skill é gratuita e de código aberto. Serviços de imagem, voz e geração de vídeo podem cobrar conforme a plataforma e o plano da sua conta. Uma assinatura não inclui necessariamente créditos de API.
+- **O gancho de 3 segundos**: transforma a frase inicial em uma contradição visual imediata ou uma lacuna de curiosidade para impedir que o público continue rolando a tela.
+- **Metáforas visuais**: transforma conceitos abstratos em piadas visuais, como ansiedade representada por uma roda de hamster encolhendo ou esgotamento por uma bateria em 1%.
+- **Ritmo e pausas cômicas**: insere pausas estruturadas, planos de reação e indicações de efeitos sonoros (SFX), acompanhando o timing de criadores como Casually Explained.
 
-### Q7. Se não gostar de uma imagem ou da narração, preciso refazer tudo?
+### Q7. Quais assistentes de IA e editores de vídeo são compatíveis?
 
-Não. Aprove primeiro o roteiro e o plano de produção. Depois, use uma amostra curta para conferir estilo, personagem, voz, legendas e ritmo antes de produzir o vídeo completo.
+- **Ambientes de IA**: Claude Code, OpenAI Codex, Cursor, Antigravity ou qualquer ambiente de agente com acesso a arquivos e ao terminal.
+- **Geradores de vídeo**: Google Flow, Runway (Gen-3), Luma Dream Machine, Kling, Pika ou qualquer modelo de imagem para vídeo ou texto para vídeo.
+- **Editores de vídeo**: os prompts e as exportações de áudio estão prontos para arrastar e soltar no CapCut, Premiere Pro, DaVinci Resolve ou Final Cut.
 
-Se o problema estiver em um trecho, ajuste só essa parte e reaproveite a narração e os materiais já aprovados. Isso reduz retrabalho e custos repetidos.
+### Q8. Se eu não gostar de uma cena, preciso renderizar o vídeo inteiro de novo?
 
-### Q8. Posso publicar no YouTube ou usar comercialmente?
-
-O projeto usa a licença MIT, que permite uso comercial. Imagens, músicas, efeitos sonoros e serviços de voz de terceiros continuam sujeitos às suas próprias licenças. A monetização no YouTube depende da análise e das regras da plataforma.
+Não! Essa é a principal vantagem da nossa arquitetura modular de 6 cenas. Se a cena 3 precisar de ajuste, revise apenas o prompt dela. As cenas 1, 2, 4, 5 e 6 permanecem intactas. Isso economiza 80% do tempo de edição e evita desperdício de créditos de geração.
 
 <!-- readme:contribute -->
 
-## Mais estilos, mais possibilidades de criar
+<a id="road-to-10000-stars--creator-ecosystem"></a>
 
-⭐ **Quer criar um canal no YouTube sem aparecer e explorar a monetização de conteúdo?** Deixe um Star para acompanhar estilos de bonecos de palito, prompts de vídeo e fluxos de produção automatizados — e tirar o “como vou produzir?” do caminho.
+## ⭐ Rumo a 10,000 Stars e a um ecossistema de criadores
 
-🔔 **Siga [@CrazyKaomei](https://x.com/CrazyKaomei)** para conhecer ferramentas e fluxos de automação para vídeos no YouTube sem aparecer: roteiro, narração, imagens e edição conectados para reduzir tarefas repetitivas e facilitar a produção solo. Também tem ideias de conteúdo, crescimento de canal e caminhos para monetização.
+**Cada Star impulsiona a próxima novidade!** Juntos, estamos construindo um estúdio 100% gratuito e de código aberto para ajudar criadores solo a tocar canais sem aparecer, sem assinaturas SaaS de US$ 50/mês.
 
-<a id="whats-next"></a>
-
-🎨 **Estilos planejados:** livro ilustrado, lutas em grafite, sitcom de dois personagens, aventura com cartas, mistura de cenários reais e ilustrados e explicações com quadro ou apresentação.
-
-💬 **Sugestões e trabalhos da comunidade:** quer propor um estilo, mostrar um vídeo ou relatar um problema? Fale com [@CrazyKaomei](https://t.me/CrazyKaomei) no Telegram. Para sugerir um estilo, inclua referências e o tema que quer explorar. Para enviar um trabalho, inclua o vídeo, o estilo usado e o link do autor para exibição e créditos.
+- [x] **1,000 Stars**: lançamento do modo Director + 5 estilos visuais principais
+- [x] **3,000 Stars**: lançamento do modo AutoPilot para gerar vídeos em um clique
+- [ ] **🔥 5,000 Stars**:
+  - Lançamento de 5–10 novos estilos visuais
+  - Editor em lote com um clique para YouTube Shorts e TikTok
+- [ ] **7,500 Stars**:
+  - Biblioteca com mais de 1,000 prompts de roteiros virais para YouTube
+  - Mais de 200 efeitos sonoros e transições livres de royalties e seguros para Content ID
+- [ ] **10,000 Stars**: lançamento do Web Studio oficial completo e integrado
 
 <div align="center">
 <a href="https://www.star-history.com/?repos=kaomei%2Fstickman-video-director&amp;type=date">
@@ -356,7 +465,29 @@ O projeto usa a licença MIT, que permite uso comercial. Imagens, músicas, efei
 </a>
 </div>
 
-## Licença
+<a id="whats-next"></a>
+
+## 🔮 Estilos visuais planejados
+
+Estamos treinando novos motores especializados para os nichos mais pedidos de canais do YouTube sem aparecer:
+
+- **História e lendas no estilo OverSimplified** — Pequenas figuras históricas, setas de conquista e mapas de batalha satíricos
+- **Combate stickman e linhas de velocidade** — Lutas dinâmicas no estilo Alan Becker, artes marciais e quadros de impacto
+- **Psicologia sombria e noir estoico** — Silhuetas marcantes, olhos brilhantes e narrativas no estilo As 48 Leis do Poder
+- **Paródias de Wall Street e do Vale do Silício** — Stickmen de terno e gravata, gráficos despencando e sátira corporativa
+- **Podcast com dois microfones e stand-up** — Comédia de diálogo ágil, reaproveitamento de entrevistas e troca de provocações entre personagens
+- **Mistérios da internet e lendas urbanas** — Esboços a lápis sinistros, falhas analógicas e histórias de mistério do Reddit
+
+## 💬 Comunidade e envios
+
+Quer sugerir um estilo ou ter seu canal em destaque? Mande uma mensagem para **[@CrazyKaomei](https://telegram.me/CrazyKaomei)** no Telegram:
+
+- **Pedir um estilo**: envie um link de referência visual + o nicho que você quer abordar.
+- **Aparecer em destaque**: fez um vídeo com esta ferramenta? Envie o link para exibição neste README e no nosso canal oficial do YouTube!
+
+🔔 *Siga **[@CrazyKaomei](https://x.com/CrazyKaomei)** no X para fluxos diários de produção de vídeo, ferramentas de automação e procedimentos de crescimento de canal.*
+
+## 📄 Licença
 
 Este projeto usa a [licença MIT](https://github.com/kaomei/stickman-video-director/blob/main/LICENSE): você pode usar, modificar, distribuir e utilizar comercialmente sem pagar pela Skill. Ao distribuir o projeto ou partes substanciais dele, mantenha os avisos de direitos autorais e de licença.
 

@@ -2,16 +2,18 @@
 
 [🇺🇸 EN](README.en.md) · [**🇨🇳 简中**](README.zh-CN.md) · [🇯🇵 日本語](README.ja.md) · [🇰🇷 한국어](README.ko.md) · [🇫🇷 FR](README.fr.md) · [🇧🇷 PT-BR](README.pt-BR.md) · [🇹🇷 TR](README.tr.md) · [🇮🇩 ID](README.id.md)
 
-# AI 火柴人视频生成器
+# 🎬 Stickman Video Director
 
-**将任何想法变成一部高质量的、稳定画风火柴人视频。**
+**将任何脚本变成适合不露脸 YouTube 频道的多画风爆款火柴人动画视频。完全开源。**
 
 [![GitHub Stars](https://img.shields.io/github/stars/kaomei/stickman-video-director?style=flat-square)](https://github.com/kaomei/stickman-video-director/stargazers)
 ![MIT License](https://img.shields.io/badge/License-MIT-16a34a?style=flat-square)
 
-给一个话题、一篇文章或链接，自动制作画面、旁白、字幕、音效与微动画，交付完整火柴人视频。**不出镜，也能做出有辨识度的 YouTube 频道。**
+从一个话题、一篇文章或一份脚本开始，自动编排画面、配音、字幕与音效，制作可直接发布的火柴人视频。
 
-汇总全网热门的火柴人画风，持续更新与开源——适用于 **知识科普、心理励志、教育宣传、情感治愈、流行故事等多赛道。**
+**⚡ 100% 免费开源。无需出镜，无需每月 $50 的订阅，几分钟就能完成，不必等上几天。**
+
+画风持续更新，适用于 **科学科普、暗黑心理学、科技寓言、热门奇闻与故事类频道。**
 
 </div>
 
@@ -46,42 +48,56 @@
 <a href="#b1"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@fa0a68d1ccf9fd057230abab2af832f768debe86/assets/readme/previews/b1-minimal-handdrawn.gif" alt="极简手绘风火柴人视频：生动角色、重点文字与微动画" width="90%"></a>
 </td>
 </tr>
+<tr>
+<td width="50%" align="center">
+<strong>暖金暗影风</strong><br>
+<a href="#a6"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@828b865b37cbff61464b9c00e04bce79f79b3b5c/assets/readme/previews/style-6-amber-noir-flow.gif" alt="暖金暗影风火柴人动画：暖光与深邃暗影中的城市，主角身穿橙色连帽衫" width="90%"></a>
+</td>
+<td width="50%" align="center">
+<a href="#a7"><strong>敬请期待…</strong></a>
+</td>
+</tr>
 </table>
 
 <div align="center">
 
-**6 大画风 · 8 种视觉方案 · 实测样片 · 免费开源**
+**7 大画风 · 9 种视觉方案 · 实测样片 · 免费开源**
 
-⭐ **本系列持续更新，欢迎点个 Star，更多热门画风陆续上线。**
+⭐ **为项目点个 Star，及时关注下一批画风和新功能解锁。**
 
-[开始使用](#quick-start) · [A 画风](#a-styles) · [B 画风](#b-styles) · [常见问题](#faq)
+[开始使用](#quick-start) · [导演模式画风](#a-styles) · [全自动模式画风](#b-styles) · [常见问题](#faq) · [路线图](#road-to-10000-stars--creator-ecosystem)
 
 </div>
 
 <a id="creation-modes"></a>
 
-## 两种视频制作模式
+## 🎬 两种视频制作模式
 
-**想精细控制镜头，选 A · 导演模式；想做长片、不想逐段拼装，选 B · 全自动模式。** 同一个项目，两种制作方式。
+**想掌控每个镜头？选择 A · 导演模式。想拿到完整视频，不想自己拼接场景？选择 B · 全自动模式。** 一个项目，两种工作流。
 
 |  | <div align="center">A · 导演模式</div> | <div align="center">B · 全自动模式</div> |
 |:---:|:---|:---|
 | **特点** | **你来掌镜，AI 做导演**：生成分镜与提示词，由你控制片段生成和剪辑。 | **给出话题或需求，直接拿成片**：自动完成插画、配音、字幕、微动画与视频合成。 |
 | **时长** | **短片优先**，如 30 秒–3 分钟；也可逐段制作更长内容。 | **长片优先**，尤其适合 **10 分钟及以上**的旁白视频，也能做短片和连续故事短剧。 |
-| **工具** | 用支持 Skill 的 AI 助手做提案，再到 **Google Flow** 等平台生成片段，用**剪映**等工具剪辑。 | 在 **Codex、Claude Code** 等能读写文件、调用工具和执行命令的 AI 编程代理中运行，串起素材生成与本地合成。 |
+| **工具** | 用支持 Skill 的 AI 助手规划分镜，在你偏好的视频生成工具中生成片段（Google Flow、Runway、Luma、Kling 等），再用 CapCut 或 Premiere 完成剪辑。 | 在 **Codex、Claude Code** 等能读写文件、调用工具和执行命令的 AI 编程代理中运行，串起素材生成与本地合成。 |
 | **画面** | **逐段生成动画**：侧重角色动作、镜头调度与人物互动。 | **插画分镜＋微动画**：用切镜、推拉和平移配合旁白讲故事，不必逐段生成完整动作视频。 |
 | **产出** | 导演提案、分镜、逐段视频提示词与声音设计。 | **带配音、字幕与微动画的完整视频文件**。 |
 | **开始** | <div align="center"><a href="#director-start">使用导演模式</a></div> | <div align="center"><a href="#autopilot-start">使用全自动模式</a></div> |
 
-两种方式都可从**话题、文案或完整脚本**开始。**A、B 画风独立编号、分别展示，不共用画面；新画风与样片在各自系列下更新。** 画幅、旁白语言和音色按需选择。上面的时长是选型建议，不是硬性限制。
+两种工作流都可以从一个初步话题、一个网页链接或一份完整脚本开始。画幅（9:16、16:9、1:1）、旁白语言与配音均可自由选择。上面的时长仅供参考，不是硬性限制。
 
-全自动模式需要可用的图像、配音等生成服务与本地视频合成环境；普通聊天窗口不能直接替代这套运行环境。Skill 免费开源，所接服务可能另行收费。
+💡 **快速配置说明**：
+
+- **导演模式**可在普通对话式 AI 窗口中使用。
+- **全自动模式**运行在具备文件和终端访问能力的 AI 编程代理中（如 **Claude Code、OpenAI Codex 或 Cursor**），自动完成从渲染到文件交付的全流程。
 
 <a id="quick-start"></a>
 
-## 开始使用
+## 🧭 开始使用
 
-把下面这段发给支持 Skill 的 AI 助手。安装成功后，AI 助手会介绍**两种模式能做什么、如何开始**，并给出可以直接照着说的示例。
+兼容 Claude Code、Codex、Cursor、Antigravity，或任何具备文件和终端访问能力的智能体环境。
+
+把以下内容发送给你的 AI 助手：
 
 ```text
 帮我安装这个 Skill：
@@ -112,7 +128,7 @@ https://github.com/kaomei/stickman-video-director
 
 提案包含故事结构、分段旁白、画面动作、镜头和声音设计。拿到提示词后，将它们逐条复制到 [Google Flow](https://flow.google.com/) 等视频生成工具，再用剪映等工具添加字幕、完成剪辑。
 
-第一次做，可以跟着[完整制作教程](https://x.com/CrazyKaomei/status/2102311241046008268)跑一遍。
+制作第一个视频时，请参考 [X 上的可视化制作教程](https://x.com/CrazyKaomei/status/2102311241046008268)（含分步视频演示的串帖）。
 
 <a id="autopilot-start"></a>
 
@@ -137,11 +153,13 @@ AI 助手会根据内容设计分镜，生成画面与旁白，配好字幕和�
 
 首次使用会先检查所需配置，缺什么、怎么补都会逐步说明。画面或声音不满意，可以只调整对应片段，保留已经确认的部分。
 
+**两种模式都可选的收尾步骤：**确认成片满意后，可继续制作[封面与发布工具包](#thumbnail-publishing-kit)，获取匹配画风的封面和上传文案，也可以直接结束。无需切换模式或重新安装。
+
 <a id="style-gallery"></a>
 
 <a id="a-styles"></a>
 
-## A · 导演模式画风一览
+## 🎨 A · 导演模式画风一览
 
 按 A1、A2、A3…更新，每个画风下展示对应的动画样片。
 
@@ -233,9 +251,34 @@ AI 助手会根据内容设计分镜，生成画面与旁白，配好字幕和�
 
 ---
 
+<a id="a6"></a>
+
+### A6：暖金暗影风
+
+暖金色灯光、深邃暗影，以及穿着橙色连帽衫的黑色圆头角色。把一个令人好奇的“如果”变成电影感小故事，用富有表现力的动作讲述，而不是让角色对镜头口播。
+
+- **视觉风格**：暖琥珀色高光与深紫暗影形成对比，搭配简洁剪影、柔和明暗的城市场景和克制的镜头运动。
+- **适合内容**：“如果”主题、心理学、现代寓言、意外发现，以及带反转的短故事。
+- **适合这样选**：你想用电影感动画场景搭配独立旁白。在支持浏览器操作的智能体中，确认后的片段可以继续组装，加入配音、音效、醒目的全大写字幕和简洁的白色标题。
+
+| 示例 1：如果所有东西都便宜一万倍？ | 示例 2：值得跑去抢的好价 |
+|:---:|:---:|
+| <a href="assets/readme/style-6-amber-noir-mcp.mp4"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@828b865b37cbff61464b9c00e04bce79f79b3b5c/assets/readme/previews/style-6-amber-noir-mcp.gif" alt="暖金暗影风：物价一夜骤降的 20 秒故事" width="360"></a> | <a href="assets/readme/style-6-amber-noir-flow.mp4"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@828b865b37cbff61464b9c00e04bce79f79b3b5c/assets/readme/previews/style-6-amber-noir-flow.gif" alt="暖金暗影风：橙色连帽衫角色在商店外的 8 秒动画" width="360"></a> |
+| Renoise MCP 示例 · 20 秒 | Google Flow 示例 · 8 秒 |
+
+---
+
+<a id="a7"></a>
+
+### A7：待更新…
+
+新的专用导演画风正在训练中。[为项目点个 Star](#road-to-10000-stars--creator-ecosystem)，一起在 5,000 Stars 时解锁！
+
+---
+
 <a id="b-styles"></a>
 
-## B · 全自动模式画风一览
+## 🤖 B · 全自动模式画风一览
 
 按 B1、B2、B3…更新，每个画风下展示对应的插画分镜＋微动画成片，与 A 系列分开维护。
 
@@ -272,71 +315,137 @@ AI 助手会根据内容设计分镜，生成画面与旁白，配好字幕和�
 
 ### B2：待更新…
 
-画风介绍、独立样片与使用示例将在这里更新。
+新的全自动画风和程序化动画正在训练中。[为项目点个 Star](#road-to-10000-stars--creator-ecosystem)，一起在 5,000 Stars 时解锁！
+
+<!-- thumbnail-publishing-kit:start -->
+<a id="thumbnail-publishing-kit"></a>
+
+## 🖼️ 高点击率封面与发布工具包
+
+**视频做得再好，也要先让人愿意点开。** 动画完成后，在同一工作流中统筹与画风匹配的封面、高点击率标题和观众互动钩子。
+
+适用于**导演模式与全自动模式**的一体化收尾工具包：围绕视频已确认的角色与画风设计视觉钩子，并配齐可直接发布的 YouTube 元数据。
+
+<table width="100%">
+  <tr>
+    <td align="center"><a href="assets/readme/thumbnails/no-camera.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/no-camera.jpg" alt="NO CAMERA? — 表情生动的手绘火柴人与打叉的相机" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/first-job.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/first-job.jpg" alt="THE FIRST JOB — 史前角色面对巨大的石块障碍" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/a5-samurai-taxes.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a5-samurai-taxes.jpg" alt="SAMURAI VS TAXES — 赛璐璐风武士、江户街景与木版画风衬线字" width="280"></a></td>
+  </tr>
+  <tr>
+    <td align="center">一个简单问题，一个清晰符号。</td>
+    <td align="center">用巨大的障碍建立故事悬念。</td>
+    <td align="center">时代服饰、场景与标题字体相呼应。</td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td align="center"><a href="assets/readme/thumbnails/a1-you-vs-you.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a1-you-vs-you.jpg" alt="YOU vs YOU — 小小的黑色火柴人面对巨大的自己，辅以克制的红色点缀" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/a2-busy-vs-better.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a2-busy-vs-better.jpg" alt="BUSY ≠ BETTER — 红帽角色被工作流卡片淹没，与只专注一件事形成对照" width="280"></a></td>
+    <td align="center"><a href="assets/readme/thumbnails/a4-3am-again.jpg"><img src="https://cdn.jsdelivr.net/gh/kaomei/stickman-video-director@ae1685ba812f9686463f319fe6f0d4eb7d581433/assets/readme/thumbnails/a4-3am-again.jpg" alt="3AM. AGAIN. — 深夜刷手机、蓝色屏幕光与柔和手写字" width="280"></a></td>
+  </tr>
+  <tr>
+    <td align="center">用悬殊的体型讲清一个冲突。</td>
+    <td align="center">忙碌还是有效，一眼看懂。</td>
+    <td align="center">有共鸣的场景，绘画光影与手写字。</td>
+  </tr>
+</table>
+
+*所有封面构思都围绕经过验证的 YouTube 包装心理学设计：鲜明的视觉反差、清晰的轮廓，以及手机端易读的字体。*
+
+### 工具包包含：
+
+- **封面图片**: 1 张匹配已确认角色、画风、配色与核心冲突的 16:9 横版封面。有可用生图工具且所需费用获准后，直接生成图片。
+- **5 个高点击率标题方案**: 兼顾搜索意图、好奇心缺口与广泛的观众吸引力。
+- **YouTube Studio 简介与 SEO**: 包含主题摘要、相关标签，以及有最终成片或已核实时间轴支持的时间戳。
+- **置顶评论互动钩子**: 1 个与视频相关、邀请观众真实交流的问题。
+- **发布前检查清单**: 核对手机端安全区、对比度、内容准确性和素材权利审核状态，不保证通过 Content-ID 或获得平台变现资格。
+
+### 如何触发：
+
+你确认成片满意后，AI 助手会询问是否需要这个可选收尾包。同意即可继续，也可以跳过，不影响视频交付，无需复制提示词。你也可以直接说：
+
+```text
+为这个视频生成封面与发布工具包：
+- 1 张匹配已确认画风的 16:9 横版封面图
+- 5 个 YouTube 标题方案
+- 简介、相关标签，以及有依据时提供的已核实时间戳
+- 1 个用于置顶评论的互动问题
+- 发布前检查清单，明确标注待核对项
+```
+
+*生图需要可用工具及必要的费用授权；工具不可用时，AI 助手会说明缺口，并先交付文字包。也可以在脚本确认后提前请求草稿，但依赖最终成片的检查仍会标为待核对。下载封面、按需将文案复制到 YouTube Studio 或 TikTok；不会自动上传或发布。*
+
+<!-- thumbnail-publishing-kit:end -->
 
 <!-- readme:reliability -->
 
 <a id="faq"></a>
 
-## 常见问题
+## ❓ 常见问题解答 (FAQ)
 
-### Q1. 没有脚本，也能做视频吗？
+### Q1. 这真的是 100% 免费的吗？有没有隐藏收费？
 
-可以。给一个话题、一篇文章、一个链接或具体需求，AI 助手会先整理成视频脚本；已有脚本也可以直接使用。最好一起说明目标观众、发布平台和期望时长。
+是的。Stickman Video Director 采用 MIT 开源协议，100% 完全免费且开源，你可以自由用于个人创作或商业变现。不同于传统每月收取 $30–$60 昂贵月费的商业软件，本项目没有任何订阅费。你只需根据自己选择调用的第三方大模型服务（如 Google Gemini、Claude 或 ElevenLabs）按需支付官方 API 费用。
 
-### Q2. 导演模式的画风可以做成全自动吗？为什么要有导演模式？
+### Q2. 生成的视频可以在 YouTube 和 TikTok 上开通收益变现吗？
 
-目前 A 系列画风的制作流程相对独立，但你可以让 AI 助手采用喜欢的 A 系列画风，结合 B 系列的制作流程，自行 DIY。
+完全可以。无脸号创作者最担心被平台判定为“搬运重复内容（Reused Content）”或“低质 AI 垃圾”导致无法获利。由于本项目生成的是具有高度原创叙事节奏、独特视觉分镜和有针对性撰写的故事脚本，成片完全属于高价值原创内容，符合 YouTube 创作者收益计划（YPP）与 TikTok 创作者基金的变现标准。
 
-保留导演模式，主要是为了控制视频生成和试错成本——制作十几分钟的长视频，一轮完整生成的费用可能达到 **几十美元左右**，反复重做还会增加开销。因此，导演模式保留逐段生成、检查和手动剪辑，既让你掌控每个镜头，也能先确认效果，再决定是否继续。
+### Q3. 我需要懂编程或者拥有昂贵的高性能显卡吗？
 
-### Q3. 导演模式生成的人物不一致怎么办？
+完全不需要。你不需要购买几万块的专业独立显卡，也不需要懂写代码。
 
-可以先告诉 AI 助手：“先帮我设计符合所选画风的火柴人，确认三视图（正面、侧面、背面），再给分镜提示词。”想做专属形象的视频，也可以这样开始。已有确认的角色参考图可直接复用，不需要定制时也可跳过这一步。
+- **分镜导演模式（Director Mode）**：直接在任意支持 Skill 的 AI 助手对话框里用普通中文/英文交流即可使用；
+- **全自动模式（Autopilot Mode）**：运行在 Claude Code、Codex 或 Cursor 等现代智能体环境中，所有繁重的生成均交由云端 API 或轻量级渲染完成，不消耗本地硬件配置。
 
-在支持参考图的视频工具中，生成**每段视频时都附上已确认的角色图**。参考图是额外辅助，不替代原有分镜提示词，也不改变所选画风的规则；最终仍需检查各段人物是否一致。
+### Q4. 如果我手里没有写好的现成剧本，能直接做视频吗？
 
-### Q4. 一定要用 Codex 吗？
-
-不一定。导演模式可以在支持安装和使用 Skill 的 AI 助手中使用。
-
-全自动模式需要 Codex、Claude Code 等能够读写文件、执行命令的环境，并配置相应的生图、配音服务和本地依赖。
+可以。你可以直接扔给 AI 导演一段粗糙的想法、一个新闻链接、甚至一整篇公众号长文。AI 导演会自动提炼核心戏剧冲突，写出前 3 秒爆款黄金钩子，并将你的主题拆解为带有幽默节奏与台词断句的 6 幕式标准分镜。
 
 <!-- readme:platforms -->
 
-### Q5. 怎么把文章或参考内容，变成更有吸引力的视频？
+### Q5. 我应该如何选择“分镜导演模式”与“全自动模式”？
 
-告诉 AI 助手你想吸引谁、重点讲什么，以及希望观众看完后做什么。AI 助手会据此提炼选题角度，设计开场钩子、叙事推进和结尾引导，再整理成分镜。
+- **选择分镜导演模式（Director Mode）**：当你希望严格把控每一个镜头构图、运镜轨迹和视觉隐喻时使用。它是你的“零成本安全网”，在生成任何真实视频之前，你可以完全免费地反复微调剧本和分镜；
+- **选择全自动模式（Autopilot Mode）**：当你追求极致出片效率、想当甩手掌柜时使用。一键自动编排剧本、对齐配音、生成字幕并合成完整成片。
 
-有喜欢的视频，也可以提供参考，说明你喜欢它的节奏、表达方式或故事结构。借鉴方法，保留自己的观点与表达；涉及历史、商业和科学的事实，发布前仍需核查。
+### Q6. 它是如何确保视频具有高完播率、有梗且不枯燥的？
 
-### Q6. 使用需要付费吗？
+普通 AI 工具只会机械地把文字直译成画面，导致视频像催眠 PPT。Stickman Video Director 植入了专业的**视觉叙事心理学**：
 
-Skill 免费开源。生图、配音和视频生成等服务，按你选择的平台及账号方案计费；订阅某个平台的会员，不一定包含它的 API 调用额度。
+- **黄金 3 秒钩子**：将开篇第一句话重构为视觉反差或悬念冲突，瞬间抓住注意力防止观众划走；
+- **爆款视觉隐喻**：把枯燥抽象的概念转化为具象的搞笑视觉梗（例如把“精神内耗”具象化为一个疯狂自转的仓鼠轮，把“被掏空”具象化为头顶仅剩 1% 的低电量进度条）；
+- **卡点与节奏留白**：内置情绪铺垫、反转神表情与音效提示点（SFX），完美还原 Casually Explained 等顶流创作者的幽默节奏。
 
-### Q7. 画面或配音不满意，需要全部重做吗？
+### Q7. 支持哪些 AI 助手和剪辑软件？
 
-不需要。建议先确认脚本和制作方案，再做短样片，检查画风、人物、声音、字幕与节奏，满意后再制作整片。
+- **支持环境**：无缝兼容 Claude Code、OpenAI Codex、Cursor、Antigravity 等任意具备终端或文件读写能力的智能体环境；
+- **视频模型**：生成的提示词深度适配 Google Flow、Runway (Gen-3)、Luma、Kling（可灵）、Pika 等主流工具；
+- **剪辑软件**：导出的音画素材可直接一键拖入 CapCut（剪映海外版）、Premiere Pro、DaVinci Resolve 进行微调。
 
-如果只有某一段不合适，可以优先调整对应片段，复用已经确认的配音和素材，减少返工与重复消耗。
+### Q8. 如果成片里某个单独镜头我不满意，必须全片推倒重做吗？
 
-### Q8. 做出来的视频可以发 YouTube、用于商业项目吗？
-
-项目采用 MIT 许可，允许商用。视频使用的第三方图片、音乐、音效及配音服务仍需遵守各自的授权条款；能否开通 YouTube 收益，则以平台审核为准。
+绝对不需要！这是我们 6 幕式模块化架构的最大优势。如果你对第 3 个镜头不满意，你只需单独重新生成第 3 个镜头，第 1、2、4、5、6 镜头的音频和素材完全保留，为你节省 80% 的返工剪辑时间，杜绝浪费 API 额度。
 
 <!-- readme:contribute -->
 
-## 更多画风，更多创作可能
+<a id="road-to-10000-stars--creator-ecosystem"></a>
 
-⭐ **想做不露脸的 YouTube 频道，探索内容变现？** Star 这个项目，持续获取火柴人画风、视频提示词和自动化制作流程，让你的频道不再卡在“视频怎么做”这一步。
+## ⭐ 迈向 10,000 Stars 与创作者生态
 
-🔔 **关注 [@CrazyKaomei](https://x.com/CrazyKaomei)**：获取不出镜 YouTube 视频的自动化工作流与实用工具，串联脚本、配音、生图和剪辑，减少重复操作，让一个人也能持续产出。更多选题、频道增长与内容变现思路，持续分享。
+**每一颗 Star，都为下一次更新添一把火！** 我们正在一起打造一个 100% 免费、开源的工作室，帮助独立创作者运营不露脸频道，无需每月支付 50 美元的 SaaS 订阅费。
 
-<a id="whats-next"></a>
-
-🎨 **更多画风（计划中）**：手绘绘本、涂鸦打斗、双人情景喜剧、卡牌闯关，以及虚实融合和讲台解说。
-
-💬 **建议与投稿**：想看新画风、分享作品或反馈问题，欢迎通过 Telegram 联系 [@CrazyKaomei](https://t.me/CrazyKaomei)。画风建议请附参考和想做的主题；投稿请附作品、所用风格与作者链接，方便展示和署名。
+- [x] **1,000 Stars**：已推出导演模式 + 5 种核心画风
+- [x] **3,000 Stars**：已推出全自动模式，一键生成视频
+- [ ] **🔥 5,000 Stars**：
+  - 上线 5–10 种新画风
+  - 推出适用于 YouTube Shorts 与 TikTok 的一键批量编辑器
+- [ ] **7,500 Stars**：
+  - 提供 1,000+ 条爆款 YouTube 脚本提示词库
+  - 提供 200+ 款免版税、可安全通过 Content ID 的音效与转场
+- [ ] **10,000 Stars**：推出官方一体化 Web Studio
 
 <div align="center">
 <a href="https://www.star-history.com/?repos=kaomei%2Fstickman-video-director&amp;type=date">
@@ -348,7 +457,29 @@ Skill 免费开源。生图、配音和视频生成等服务，按你选择的�
 </a>
 </div>
 
-## 许可证
+<a id="whats-next"></a>
+
+## 🔮 计划中的画风
+
+我们正在为最受欢迎的不露脸 YouTube 内容领域训练新的专用引擎：
+
+- **OverSimplified 式历史与传说** — 迷你历史人物、征服箭头与讽刺战役地图
+- **火柴人格斗与速度线** — Alan Becker 式动态打斗、武术与冲击帧
+- **暗黑心理学与斯多葛黑色风格** — 氛围剪影、发光双眼与《权力的 48 条法则》式叙事
+- **华尔街与硅谷讽刺** — 西装领带火柴人、暴跌图表与职场吐槽
+- **双麦播客与单口喜剧** — 节奏明快的对话喜剧、访谈再创作与角色斗嘴
+- **互联网谜团与都市传说** — 诡异铅笔素描、模拟信号故障与 Reddit 悬疑故事
+
+## 💬 社区与投稿
+
+想推荐画风，或让你的频道获得展示？欢迎通过 Telegram 联系 **[@CrazyKaomei](https://telegram.me/CrazyKaomei)**：
+
+- **推荐画风**：发送视觉参考链接 + 你想做的内容领域。
+- **作品展示**：用这个工具制作了视频？发送作品链接，就有机会在本 README 和官方 YouTube 频道中展示！
+
+🔔 *在 X 上关注 **[@CrazyKaomei](https://x.com/CrazyKaomei)**，获取每日视频制作流程、自动化工具与频道增长 SOP。*
+
+## 📄 许可证
 
 本项目采用 [MIT License](https://github.com/kaomei/stickman-video-director/blob/main/LICENSE) 开源，允许免费使用、修改、商用和分发。分发本项目或其重要部分时，请保留原有版权和许可声明。
 
