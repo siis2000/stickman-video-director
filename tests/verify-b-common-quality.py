@@ -42,7 +42,13 @@ for boundary in (
     "Do not repeat compositions to fill time",
     "final encoded frame",
     "actual entity/action",
-    "every cue boundary and visual line break",
+    "Review every cue boundary against meaning and actual speech pauses",
+    "semantic subtitles with at most one visible line at a time",
+    "Preserve all spoken words and order",
+    "noun phrases, verbs with necessary objects",
+    "numbers/units and phrasal verbs",
+    "rather than a second line or mechanically smaller/squeezed type",
+    "neighboring cues for broken meaning",
     "each cue starts at its own first aligned spoken word",
     "same detail standard throughout the entire film",
     "excluding the subtitle band",
@@ -59,10 +65,22 @@ assert "B1-only visual/audio defaults and accepted examples" in supplement
 assert "common quality gates still apply to every B production" in supplement
 assert manifest["common_checklist"] == "../../references/autopilot-production-qa.md"
 assert "not the independently shared B" in manifest["scope"]["not_inherited_scope"]
-assert "currently accepts `style: B1` only" in (refs / "autopilot-runtime.md").read_text()
+runtime = (refs / "autopilot-runtime.md").read_text()
+b2 = (refs / "b2-colorful-handdrawn.md").read_text()
+assert "accepts `style: B1`, `B2`, `B3` and `B4`" in runtime
+assert "## B4 production tracks" in runtime
+assert "(b2-colorful-handdrawn.md)" in autopilot
+assert "independent local illustration-and-micro-animation style" in b2
+assert "Fola" in b2 and "ivory paper label" in b2
+assert "B1 `pose` atlas is rejected in B2" in runtime
+assert "`style: B3`" in runtime and "## B3 layered artwork" in runtime
+b3 = (refs / "b3-television.md").read_text()
+assert "(b3-television.md)" in autopilot and "(references/b3-television.md)" in entry
+assert "unit tests" in b3.lower() and "not animation quality or acceptance" in b3
+assert "currently accepts B1/B2 only" not in b3
 
 # New links stay portable and inside the single installed Skill.
-for source in (common_path, refs / "autopilot.md", refs / "b1-production-qa.md"):
+for source in (common_path, refs / "autopilot.md", refs / "b1-production-qa.md", refs / "b2-colorful-handdrawn.md", refs / "b3-television.md"):
     assert "/Users/" not in source.read_text()
     for link in re.findall(r"\]\(([^)]+)\)", source.read_text()):
         if "://" in link:
@@ -74,4 +92,4 @@ for case_id in ("B-COMMON-01", "B-COMMON-02", "B-COMMON-03", "B-COMMON-04",
                 "B-COMMON-05", "B-COMMON-06", "B-COMMON-07", "B-COMMON-08"):
     assert case_id in cases
 print("B common gates: required routing, quality boundaries, portable links and independent style settings passed.")
-print("Static integrity only: planning decisions and actual picture/sound require separate review; future B2 is not implemented.")
+print("Static integrity only: planning decisions and actual picture/sound require separate review; B1/B2 runtime behavior is tested separately.")
