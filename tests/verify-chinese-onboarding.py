@@ -13,7 +13,7 @@ assert "[**🇨🇳 简中**](README.zh-CN.md)" in cn
 assert "[🇰🇷 한국어](README.ko.md) · [🇫🇷 FR](README.fr.md)" in cn, "French follows Korean in the shared navigation"
 assert (root / "README.fr.md").is_file(), "French navigation must open a complete README"
 hero_copy = cn.split("</div>", 1)[0]
-assert "**将任何脚本变成适合不露脸 YouTube 频道的多画风爆款火柴人动画视频。完全开源。**" in hero_copy
+assert "**将任何脚本变成适合不露脸 YouTube 频道的多画风爆款火柴人动画视频。**" in hero_copy
 assert "从一个话题、一篇文章或一份脚本开始，自动编排画面、配音、字幕与音效，制作可直接发布的火柴人视频。" in hero_copy
 assert "**⚡ 100% 免费开源。无需出镜，无需每月 $50 的订阅，几分钟就能完成，不必等上几天。**" in hero_copy
 assert "画风持续更新，适用于 **科学科普、暗黑心理学、科技寓言、热门奇闻与故事类频道。**" in hero_copy
@@ -46,8 +46,8 @@ mode_rows = [line for line in mode_comparison.splitlines() if line.startswith("|
 assert not any(row.startswith(("| **操作** |", "| **用途** |")) for row in mode_rows), "Keep the comparison concise without the removed operation and use-case rows"
 assert mode_rows[0] == '|  | <div align="center">A · 导演模式</div> | <div align="center">B · 全自动模式</div> |', "Center only the mode headings"
 assert mode_rows[1] == "|:---:|:---|:---|", "Keep explanatory columns left-aligned"
-assert mode_rows[-1] == '| **开始** | <div align="center"><a href="#director-start">使用导演模式</a></div> | <div align="center"><a href="#autopilot-start">使用全自动模式</a></div> |', "Center the two start links"
-assert all('align="center"' not in row for row in mode_rows[2:-1]), "Do not center the explanatory body text"
+assert len(mode_rows) == 7 and mode_rows[-1].startswith('| **产出** |'), "Keep five explanatory rows without the redundant Start row"
+assert all('align="center"' not in row for row in mode_rows[2:]), "Do not center the explanatory body text"
 assert "插画分镜＋微动画" in mode_comparison and "插画轮播" not in mode_comparison, "Describe B as illustrated scenes rather than a slideshow; do not impose B1's drawing style on every B style"
 assert "一次安装，按需选择" not in cn, "Keep the removed mode-selection sentence out of the introduction"
 quick_start_intro = cn.split('<a id="quick-start"></a>', 1)[1].split('<a id="director-start"></a>', 1)[0]
@@ -70,9 +70,9 @@ assert "填写话题、粘贴文案，也可以直接描述需求" in director_e
 assert "人类的第一份工作是怎么来的" not in director_example, "Use a fill-in template rather than a hard-coded topic"
 assert "也可以直接贴已有文案或文章" not in cn
 assert "[查看画风一览 ↓]" not in cn, "Do not restore the removed per-mode shortcut links"
-assert "[导演模式画风](#a-styles) · [全自动模式画风](#b-styles)" in cn, "Keep the localized top style navigation"
+assert "[画风与样片](#style-gallery)" in cn, "Use one localized style shortcut landing at A then B"
 navigation = next(line for line in cn.splitlines() if line.startswith("[开始使用](#quick-start)"))
-assert navigation.endswith("[常见问题](#faq) · [路线图](#road-to-10000-stars--creator-ecosystem)"), "FAQ followed by the approved roadmap shortcut"
+assert navigation.endswith("[常见问题](#faq) · [路线图](#road-to-10000-stars--creator-ecosystem) · [加入社区](#community)"), "Community follows the roadmap shortcut"
 assert "[最近更新]" not in navigation, "Keep the removed updates shortcut out of the navigation"
 assert '<a id="recent-updates"></a>' not in cn, "Do not restore the removed updates anchor"
 assert "## 最近更新" not in cn, "Do not restore the removed updates section"
@@ -130,7 +130,7 @@ for requirement in ("AI 助手会根据内容设计分镜", "配好字幕和音�
                     "只调整对应片段，保留已经确认的部分"):
     assert requirement in autopilot_notes, requirement
 for label in ("A1：经典黑白风", "A2：现代潮酷风", "A3：史前洞穴风",
-              "A4：治愈故事风", "A5：历史卡通风", "A6：暖金暗影风", "A7：待更新…", "B1：极简线稿风", "B2：彩色手绘风", "B3：复古电视风", "B4：求生短剧风"):
+              "A4：治愈故事风", "A5：历史卡通风", "A6：暖金暗影风", "A7：待更新…", "B1：极简线稿风", "B2：彩色手绘风", "B3：复古电视风", "B4：求生短剧风", "B5：角色解说风"):
     assert f"### {label}\n" in cn, label
 hero = cn.split('<table width="100%">', 1)[1].split("</table>", 1)[0]
 style_names = ("经典黑白风", "现代潮酷风", "史前洞穴风", "治愈故事风", "历史卡通风", "暖金暗影风")
@@ -157,7 +157,7 @@ assert "看看一个 30 秒故事的完整分镜" not in cn
 assert cn.count("<details>") == cn.count("</details>")
 assert cn.count('<div align="center">') == cn.count("</div>")
 assert cn.count("<table") == cn.count("</table>")
-assert cn.count("<td ") == cn.count("</td>")
+assert len(re.findall(r"<td(?:\s|>)", cn)) == cn.count("</td>")
 ids = re.findall(r'<a id="([^"]+)"></a>', cn)
 assert len(ids) == len(set(ids)), "Duplicate explicit anchors"
 for anchor in re.findall(r'\]\(#([^)]+)\)|href="#([^"]+)"', cn):
@@ -167,7 +167,9 @@ for link in re.findall(r"\]\(([^)]+)\)", cn):
         assert (root / link.split("#")[0]).is_file(), link
 
 previews = sorted(set(re.findall(r'src="(?:https://cdn\.jsdelivr\.net/gh/kaomei/stickman-video-director@[0-9a-f]{40}/)?(assets/readme/previews/[^" ]+\.gif)"', cn)))
-assert len(previews) == 21, "Keep the 19 published previews plus the two approved B4 previews"
+assert len(previews) == 23, "Keep all 22 published previews and append the approved second B5 preview"
+assert "assets/readme/previews/b5-character-explainer.gif" in previews
+assert "assets/readme/previews/b5-character-explainer-crazymei.gif" in previews
 for name in ("b4-dispatch", "b4-death-clock"):
     assert f"assets/readme/previews/{name}.gif" in previews
 for a6_name in ("flow", "mcp"):
